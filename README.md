@@ -56,10 +56,27 @@ Los servicios de soporte están basados en el estándar **OpenAPI** y utilizan l
 - **Módulos:** Descripción de los módulos clave.
 
 ## 🔄 Diagrama de Composición de Servicios
+Aquí se detalla el diagrama de composición de servicios a través de los procesos de negocio.
+El diagrama está dividido en varias capas, cada una con sus propios módulos y componentes.
+![Diagrama de Composición de Servicios]([ruta/al/diagrama.png](https://github.com/hyanquiv/DSE_qaliwarma_BPMN/blob/proceso_compras/files/d_c_s.png)
+**1. Capa de presentación:**
+Esta capa se encarga de la interacción con el usuario, proporcionando interfaces y visualizaciones para el funcionamiento del sistema.
+  - **Paquete de Proveedores:**
+    - La Clase **Empleado** con atributos **id**, **nombre** y **rol**.
+    - Rol: representa al empleado que interactúa con el sistema.
+    - Conexión: Interactúa con las capas de gestión de documentos y lógica de negocios.
+  - **Paquete de Empleados:**
+    - La Clase **Empleado** con atributos **id**, **nombre** y **rol**.
+    - Rol: Representa al empleado que interactúa con el sistema.
+    - Conexión: Interactúa con las capas de gestión de documentos y lógica de negocios.
+  - **Paquete CAE y Padre de Familia:**
+    - La Clase **CAE**, **Padre de Familia** con atributos **id**, **nombre** y **teléfono**.
+    - Rol: Representa usuarios finales que interactúan con el sistema para tomar decisiones decisiones sobre menús escolares.
+    - Conexión: Se comunican con la lógica de negocios par definir criterios y elegir menús.
 
-Aquí se detalla el diagrama de composición de servicios a través de los procesos de negocio:
 
-![Diagrama de Composición de Servicios](ruta/al/diagrama.png)
+
+   
 
 ## 📄 Documentación Adicional
 
