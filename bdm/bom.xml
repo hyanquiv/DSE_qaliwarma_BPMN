@@ -40,5 +40,18 @@
             <queries/>
             <indexes/>
         </businessObject>
+        <businessObject qualifiedName="com.company.model2.ListaProductos">
+            <fields>
+                <field type="LONG" length="255" name="listaId" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="nombre" nullable="false" collection="false"/>
+                <field type="INTEGER" length="255" name="cantidad" nullable="false" collection="false"/>
+                <field type="LONG" length="255" name="presupuesto" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="estaAprobado" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="estaComprado" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
     </businessObjects>
 </businessObjectModel>
