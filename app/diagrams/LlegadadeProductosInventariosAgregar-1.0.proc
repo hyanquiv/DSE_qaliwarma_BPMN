@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:connectorconfiguration="http://www.bonitasoft.org/model/connector/configuration" xmlns:decision="http://www.bonitasoft.org/ns/bpm/process/decision" xmlns:definition="http://www.bonitasoft.org/ns/connector/definition/6.1" xmlns:expression="http://www.bonitasoft.org/ns/bpm/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/bpm/process">
-  <process:MainProcess xmi:id="_cQd8EE89Ee-lrae2G_Yyiw" name="LlegadadeProductos" bonitaModelVersion="8">
+  <process:MainProcess xmi:id="_cQd8EE89Ee-lrae2G_Yyiw" name="LlegadadeProductosInventariosAgregar" bonitaModelVersion="8">
     <elements xmi:type="process:Pool" xmi:id="_cQd8EU89Ee-lrae2G_Yyiw" name="Gestion de Inventarios" version="1.1">
       <elements xmi:type="process:Lane" xmi:id="_cQd8Ek89Ee-lrae2G_Yyiw" name="Unidad Territorial" actor="_cQd9RU89Ee-lrae2G_Yyiw">
         <elements xmi:type="process:StartEvent" xmi:id="_cQd8E089Ee-lrae2G_Yyiw" name="Inicia Envio de Productos" outgoing="_cQd8-k89Ee-lrae2G_Yyiw">
