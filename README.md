@@ -7,7 +7,7 @@ Bienvenido al repositorio del Proyecto BPMN en Bonitasoft. Aquí encontrarás to
 - **Equipo de Trabajo:** DSE Qaliwarma Project
   - **Integrantes:**
     - Santiago Vilca Limachi
-    - [Nombre del Integrante 2]
+    - Edson Bryan Béjar Román
     - [Nombre del Integrante 3]
     - [Nombre del Integrante 4]
 
