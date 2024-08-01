@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1">
+  <customUserInfoDefinitions/>
+  <users>
+    <user userName="John">
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">123</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="Karen">
+      <firstName>Karen</firstName>
+      <lastName>Do</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">123</password>
+      <customUserInfoValues/>
+    </user>
+  </users>
+  <roles>
+    <role name="Jefe de Unidad">
+      <displayName>Jefe de Unidad</displayName>
+    </role>
+    <role name="Jefe de CAE">
+      <displayName>Jefe de CAE</displayName>
+    </role>
+  </roles>
+  <groups>
+    <group name="Unidad Territorial">
+      <displayName>Unidad Territorial</displayName>
+    </group>
+    <group name="CAE">
+      <displayName>CAE</displayName>
+    </group>
+  </groups>
+  <memberships>
+    <membership>
+      <userName>John</userName>
+      <roleName>Jefe de Unidad</roleName>
+      <groupName>Unidad Territorial</groupName>
+    </membership>
+    <membership>
+      <userName>Karen</userName>
+      <roleName>Jefe de CAE</roleName>
+      <groupName>CAE</groupName>
+    </membership>
+  </memberships>
+</organization:Organization>
