@@ -1,4 +1,4 @@
-# 🛠️ Proyecto BPMN en Bonitasoft
+cl# 🛠️ Proyecto BPMN en Bonitasoft
 
 Bienvenido al repositorio del Proyecto BPMN en Bonitasoft. Aquí encontrarás toda la documentación necesaria sobre el proyecto, sus procesos y su arquitectura. 
 
@@ -382,6 +382,46 @@ Los servicios de soporte están basados en el estándar **OpenAPI** y utilizan l
 - **Entidades Clave:** Descripción de las entidades clave del sistema.
 - **Agregados:** Descripción de los agregados utilizados.
 - **Módulos:** Descripción de los módulos clave.
+
+## Entidades Clave del Sistema
+
+### Unidad de Planeamiento, Presupuesto y Modernización
+- Genera el presupuesto necesario y envía el informe final con los ajustes necesarios a la Unidad de Gestión de Contrataciones y Transferencia de Recursos.
+
+### Unidad de Gestión de Contrataciones y Transferencia de Recursos
+- Organiza los comités de compras, ejecuta procesos necesarios, y hace pedidos a los proveedores.
+
+### Unidad de Organización de las Prestaciones
+- Recibe los pedidos, organiza productos por unidades territoriales, y genera rutas de entrega.
+
+### Unidades Territoriales
+- Reciben y supervisan la entrega adecuada de los productos, notifican y confirman el recibimiento de los pedidos.
+
+## Agregados Utilizados
+
+### Gestión de Inventarios
+- Incluye servicios de notificaciones mediante correo electrónico y gestión de inventarios mediante base de datos, cubriendo operaciones como guardar, procesar, y ver productos, además de crear reportes de inventario.
+
+### Adquisición y Distribución de Alimentos
+- Proceso completo desde la recepción de pedidos hasta la distribución y notificación a las unidades territoriales.
+
+### Planificación del Menú Escolar
+- Incluye registrar, actualizar, eliminar y consultar datos de CAE (Centro de Atención Educativa) y padres de familia, además de definir, actualizar y consultar criterios de servicio.
+
+## Módulos Clave
+
+### Gestión de Documentos
+- Mantiene documentos y revisiones documentarias, aprobaciones documentarias, y la publicación y comunicación de documentos.
+
+### Gestión de Inventarios
+- Incluye servicios de notificaciones mediante correo electrónico y gestión de inventarios mediante bases de datos, con funcionalidades como guardar, procesar y ver productos.
+
+### Proceso de Adquisición y Distribución de Productos
+- Proceso que abarca desde la aprobación del cronograma de convocatoria, bases estandarizadas para el proceso de compras, hasta la gestión de inventarios y distribución.
+
+### Planificación del Menú Escolar
+- Definición de criterios de servicio, registro y actualización de datos de CAE y padres de familia, y la gestión de menús escolares.
+
 
 ## 📜 SOLID: Aplicación de los prinicipios
 
