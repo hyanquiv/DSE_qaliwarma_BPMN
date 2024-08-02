@@ -77,10 +77,35 @@ Este proceso garantiza una revisión exhaustiva y cumplimiento normativo del Man
 **Descripción del proceso:**
 
 Este diagrama describe el proceso de selección de proveedores. El flujo comienza con la recopilación de información sobre los proveedores potenciales, luego, se definen los criterios de selección que serán usados para evaluar los proveedores.
-El proceso inluye una evaluación inicial para determinar si los proveedores cumplen con los requisitos establecidos. Si los cumplen, se realizan una evaluación más detallada, seguida de ajustes y la aprobación de la solicitud. So no cumplen, se notifica el rechazo y el proceso termina.
+El proceso inluye una evaluación inicial para determinar si los proveedores cumplen con los requisitos establecidos. Si los cumplen, se realizan una evaluación más detallada, seguida de ajustes y la aprobación de la solicitud. Si no cumplen, se notifica el rechazo y el proceso termina.
 Generalmente, el proceso asegura que solo los proveedores que cumplen con los criterios predefinidos avanzan en el proceso de selección.
 
+### Pasos del Proceso:
 
+1. **Inicio del Proceso**
+   - El proceso comienza con el evento de inicio "Inicio1", que es activado por un empleado.
+
+2. **Recopilación de Información de Proveedores**
+   - Se realiza una recopilación de información sobre los proveedores potenciales. Esta actividad es realizada por el empleado y es seguida por un "Evento de tiempo no interruptor".
+
+3. **Definición y Criterios de Selección**
+   - Se definen los criterios de selección que serán utilizados para evaluar a los proveedores.
+
+4. **Evaluación Inicial de Proveedores**
+   - Se lleva a cabo una evaluación inicial de los proveedores para determinar si cumplen con los requisitos establecidos en los criterios de selección.
+
+5. **Decisión sobre los Requisitos**
+   - Hay una decisión basada en si los proveedores cumplen o no con los requisitos.
+     - Si **cumplen con los requisitos**, se procede a la "Evaluación de proveedores detallada y ajustes".
+     - Si **no cumplen con los requisitos**, se envía una "Notificación de rechazo".
+
+6. **Evaluación de Proveedores Detallada y Ajustes**
+   - Para los proveedores que cumplieron con los requisitos iniciales, se realiza una evaluación más detallada y se hacen los ajustes necesarios.
+
+7. **Fin del Proceso**
+   - El proceso termina de dos maneras posibles:
+     - **Solicitud Aprobada**: Si los proveedores pasan la evaluación detallada, la solicitud es aprobada.
+     - **Solicitud Rechazada**: Si no pasan la evaluación inicial, se notifica el rechazo de la solicitud.
 
 
 - ### Proceso 3: Adquisición y distribución de alimentos.
