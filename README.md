@@ -55,6 +55,19 @@ Los servicios de soporte están basados en el estándar **OpenAPI** y utilizan l
 - **Agregados:** Descripción de los agregados utilizados.
 - **Módulos:** Descripción de los módulos clave.
 
+## 🏗️ SOLID: Aplicación de los prinicipios
+
+Aquí explicamos cómo aplicamos los principios SOLID en nuestro proyecto
+
+### 🏛️ Single Responsibility Principle (Principio de responsabilidad única)
+
+Este principio se aplica en la definición de clases y métodos, aquí se puede ver la clase InventarioEntity donde se definen métodos para obtener y cambiar las variables necesarias sin interferir con otros dependencias, cada método se encarga solo de su funcionalidad
+
+### 🏛️ Open-Closed Principle (Principio Abierto-Cerrado)
+### 🏛️ Liskov Substitution Principle (Principio de responsabilidad única)
+### 🏛️ Interface Segregation Principle (Principio de segregación de interfaz)
+### 🏛️ Dependency Inversion Principle (Principio de inversión de dependencia)
+
 ## 🔄 Diagrama de Composición de Servicios
 
 Aquí se detalla el diagrama de composición de servicios a través de los procesos de negocio:
