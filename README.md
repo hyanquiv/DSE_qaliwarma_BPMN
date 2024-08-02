@@ -33,6 +33,8 @@ A continuación, se presenta una breve descripción de los procesos de negocio i
 - **Proceso 1:** Gestion de Inventarios.
 - **Proceso 2:** Descripción breve del proceso.
 - **Proceso 3:** Planificación del Menu Escolar
+  ![12](https://github.com/user-attachments/assets/9792bd1e-0b49-48f1-9eed-5ec87e92b967)
+
   ![image](https://github.com/user-attachments/assets/96cc98a3-fb87-4b1b-a044-a1010205c0a7)
   
 #### 1. Comité de Alimentacion Escolar CAE. 
