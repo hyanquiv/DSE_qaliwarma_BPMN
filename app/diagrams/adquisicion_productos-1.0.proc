@@ -2,7 +2,7 @@
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:decision="http://www.bonitasoft.org/ns/bpm/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/bpm/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/bpm/process">
   <process:MainProcess xmi:id="_FBJFUDpuEe-SJZG9QmTKNQ" name="adquisicion_productos" bonitaModelVersion="8">
     <elements xmi:type="process:Pool" xmi:id="_FBJFUTpuEe-SJZG9QmTKNQ" name="Adquisicion y entrega de productos" version="2.0">
-      <elements xmi:type="process:Lane" xmi:id="_FBJFUjpuEe-SJZG9QmTKNQ" name="Unidad de Planeamiento, Presupuesto y Modernización" actor="_FBJsbjpuEe-SJZG9QmTKNQ">
+      <elements xmi:type="process:Lane" xmi:id="_FBJFUjpuEe-SJZG9QmTKNQ" name="Unidad de Planeamiento, Presupuesto y Modernización" actor="_wRNY8FBuEe-govrgdeLbnA">
         <elements xmi:type="process:StartEvent" xmi:id="_FBJFUzpuEe-SJZG9QmTKNQ" name="Recibir lista de compras" outgoing="_FBJsazpuEe-SJZG9QmTKNQ">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_FBJFVDpuEe-SJZG9QmTKNQ" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_FBJFVTpuEe-SJZG9QmTKNQ" name="" content="" returnTypeFixed="true"/>
@@ -18,9 +18,7 @@
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_CuHEADp0Ee-SJZG9QmTKNQ" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_CuHEAjp0Ee-SJZG9QmTKNQ" name="" content="" returnTypeFixed="true"/>
           <operations xmi:type="expression:Operation" xmi:id="_Z-6bkDp1Ee-SJZG9QmTKNQ">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_Z-6bkTp1Ee-SJZG9QmTKNQ" name="lista" content="lista" type="TYPE_VARIABLE" returnType="com.company.model.ListaProductos">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_Z-6bkjp1Ee-SJZG9QmTKNQ" name="lista" dataType="_FBJshzpuEe-SJZG9QmTKNQ" className="com.company.model.ListaProductos"/>
-            </leftOperand>
+            <leftOperand xmi:type="expression:Expression" xmi:id="_Z-6bkTp1Ee-SJZG9QmTKNQ" name="" content=""/>
             <rightOperand xmi:type="expression:Expression" xmi:id="_Z-6bkzp1Ee-SJZG9QmTKNQ" name="listaInput.estaAprobado" content="listaInput?.estaAprobado" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
               <referencedElements xmi:type="process:ContractInput" xmi:id="_Z-6blDp1Ee-SJZG9QmTKNQ" name="listaInput" type="COMPLEX" createMode="false"/>
             </rightOperand>
@@ -37,7 +35,7 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_g_O_gDp8Ee-SJZG9QmTKNQ" name="validarPresupuesto" content="5084b22c-7a76-4a14-9f5a-278992356194" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_FiwV6Dp0Ee-SJZG9QmTKNQ">
-            <inputs xmi:type="process:ContractInput" xmi:id="_Z-50gDp1Ee-SJZG9QmTKNQ" name="listaInput" type="COMPLEX" dataReference="lista" createMode="false">
+            <inputs xmi:type="process:ContractInput" xmi:id="_Z-50gDp1Ee-SJZG9QmTKNQ" name="listaInput" type="COMPLEX" createMode="false">
               <inputs xmi:type="process:ContractInput" xmi:id="_Z-50gTp1Ee-SJZG9QmTKNQ" name="estaAprobado" type="BOOLEAN" createMode="false"/>
             </inputs>
           </contract>
@@ -48,9 +46,7 @@
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_FBJFWTpuEe-SJZG9QmTKNQ" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_FBJFWjpuEe-SJZG9QmTKNQ" name="" content="" returnTypeFixed="true"/>
           <operations xmi:type="expression:Operation" xmi:id="_Jo6LkDp3Ee-SJZG9QmTKNQ">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_Jo6LkTp3Ee-SJZG9QmTKNQ" name="lista" content="lista" type="TYPE_VARIABLE" returnType="com.company.model.ListaProductos">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_Jo6Lkjp3Ee-SJZG9QmTKNQ" name="lista" dataType="_FBJshzpuEe-SJZG9QmTKNQ" className="com.company.model.ListaProductos"/>
-            </leftOperand>
+            <leftOperand xmi:type="expression:Expression" xmi:id="_Jo6LkTp3Ee-SJZG9QmTKNQ" name="" content=""/>
             <rightOperand xmi:type="expression:Expression" xmi:id="_Jo6Lkzp3Ee-SJZG9QmTKNQ" name="listaInput.nombre" content="listaInput?.nombre" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
               <referencedElements xmi:type="process:ContractInput" xmi:id="_Jo6LlDp3Ee-SJZG9QmTKNQ" name="listaInput" type="COMPLEX" createMode="false"/>
             </rightOperand>
@@ -59,9 +55,7 @@
             </operator>
           </operations>
           <operations xmi:type="expression:Operation" xmi:id="_Jo6Lljp3Ee-SJZG9QmTKNQ">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_Jo6Llzp3Ee-SJZG9QmTKNQ" name="lista" content="lista" type="TYPE_VARIABLE" returnType="com.company.model.ListaProductos">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_Jo6LmDp3Ee-SJZG9QmTKNQ" name="lista" dataType="_FBJshzpuEe-SJZG9QmTKNQ" className="com.company.model.ListaProductos"/>
-            </leftOperand>
+            <leftOperand xmi:type="expression:Expression" xmi:id="_Jo6Llzp3Ee-SJZG9QmTKNQ" name="" content=""/>
             <rightOperand xmi:type="expression:Expression" xmi:id="_Jo6LmTp3Ee-SJZG9QmTKNQ" name="listaInput.cantidad" content="listaInput?.cantidad" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Integer">
               <referencedElements xmi:type="process:ContractInput" xmi:id="_Jo6Lmjp3Ee-SJZG9QmTKNQ" name="listaInput" type="COMPLEX" createMode="false"/>
             </rightOperand>
@@ -70,9 +64,7 @@
             </operator>
           </operations>
           <operations xmi:type="expression:Operation" xmi:id="_Jo6LnDp3Ee-SJZG9QmTKNQ">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_Jo6LnTp3Ee-SJZG9QmTKNQ" name="lista" content="lista" type="TYPE_VARIABLE" returnType="com.company.model.ListaProductos">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_Jo6Lnjp3Ee-SJZG9QmTKNQ" name="lista" dataType="_FBJshzpuEe-SJZG9QmTKNQ" className="com.company.model.ListaProductos"/>
-            </leftOperand>
+            <leftOperand xmi:type="expression:Expression" xmi:id="_Jo6LnTp3Ee-SJZG9QmTKNQ" name="" content=""/>
             <rightOperand xmi:type="expression:Expression" xmi:id="_Jo6Lnzp3Ee-SJZG9QmTKNQ" name="listaInput.presupuesto" content="listaInput?.presupuesto?.trim() ? listaInput.presupuesto.toLong() : null" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long">
               <referencedElements xmi:type="process:ContractInput" xmi:id="_Jo6LoDp3Ee-SJZG9QmTKNQ" name="listaInput" type="COMPLEX" createMode="false"/>
             </rightOperand>
@@ -81,9 +73,7 @@
             </operator>
           </operations>
           <operations xmi:type="expression:Operation" xmi:id="_Iwmq8z0yEe-h2Y3-lDnU5w">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_Iwmq9D0yEe-h2Y3-lDnU5w" name="lista" content="lista" type="TYPE_VARIABLE" returnType="com.company.model.ListaProductos">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_Iwmq9T0yEe-h2Y3-lDnU5w" name="lista" dataType="_FBJshzpuEe-SJZG9QmTKNQ" className="com.company.model.ListaProductos"/>
-            </leftOperand>
+            <leftOperand xmi:type="expression:Expression" xmi:id="_Iwmq9D0yEe-h2Y3-lDnU5w" name="" content=""/>
             <rightOperand xmi:type="expression:Expression" xmi:id="_Iwmq9j0yEe-h2Y3-lDnU5w" name="listaInput1.nombre" content="listaInput1?.nombre" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
               <referencedElements xmi:type="process:ContractInput" xmi:id="_Iwmq9z0yEe-h2Y3-lDnU5w" name="listaInput1" type="COMPLEX" createMode="false"/>
             </rightOperand>
@@ -92,9 +82,7 @@
             </operator>
           </operations>
           <operations xmi:type="expression:Operation" xmi:id="_Iwmq-T0yEe-h2Y3-lDnU5w">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_Iwmq-j0yEe-h2Y3-lDnU5w" name="lista" content="lista" type="TYPE_VARIABLE" returnType="com.company.model.ListaProductos">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_Iwmq-z0yEe-h2Y3-lDnU5w" name="lista" dataType="_FBJshzpuEe-SJZG9QmTKNQ" className="com.company.model.ListaProductos"/>
-            </leftOperand>
+            <leftOperand xmi:type="expression:Expression" xmi:id="_Iwmq-j0yEe-h2Y3-lDnU5w" name="" content=""/>
             <rightOperand xmi:type="expression:Expression" xmi:id="_Iwmq_D0yEe-h2Y3-lDnU5w" name="listaInput1.cantidad" content="listaInput1?.cantidad" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Integer">
               <referencedElements xmi:type="process:ContractInput" xmi:id="_Iwmq_T0yEe-h2Y3-lDnU5w" name="listaInput1" type="COMPLEX" createMode="false"/>
             </rightOperand>
@@ -103,9 +91,7 @@
             </operator>
           </operations>
           <operations xmi:type="expression:Operation" xmi:id="_Iwmq_z0yEe-h2Y3-lDnU5w">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_IwmrAD0yEe-h2Y3-lDnU5w" name="lista" content="lista" type="TYPE_VARIABLE" returnType="com.company.model.ListaProductos">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_IwmrAT0yEe-h2Y3-lDnU5w" name="lista" dataType="_FBJshzpuEe-SJZG9QmTKNQ" className="com.company.model.ListaProductos"/>
-            </leftOperand>
+            <leftOperand xmi:type="expression:Expression" xmi:id="_IwmrAD0yEe-h2Y3-lDnU5w" name="" content=""/>
             <rightOperand xmi:type="expression:Expression" xmi:id="_IwmrAj0yEe-h2Y3-lDnU5w" name="listaInput1.presupuesto" content="listaInput1?.presupuesto?.trim() ? listaInput1.presupuesto.toLong() : null" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long">
               <referencedElements xmi:type="process:ContractInput" xmi:id="_IwmrAz0yEe-h2Y3-lDnU5w" name="listaInput1" type="COMPLEX" createMode="false"/>
             </rightOperand>
@@ -122,12 +108,12 @@
             <targetForm xmi:type="expression:Expression" xmi:id="__5BJwD0yEe-h2Y3-lDnU5w" name="ingresarListaCompras" content="1d26b79a-0e36-45ef-878f-1f713bdab169" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_gyig-Dp0Ee-SJZG9QmTKNQ">
-            <inputs xmi:type="process:ContractInput" xmi:id="_JompkDp3Ee-SJZG9QmTKNQ" name="listaInput" type="COMPLEX" dataReference="lista" createMode="false">
+            <inputs xmi:type="process:ContractInput" xmi:id="_JompkDp3Ee-SJZG9QmTKNQ" name="listaInput" type="COMPLEX" createMode="false">
               <inputs xmi:type="process:ContractInput" xmi:id="_JompkTp3Ee-SJZG9QmTKNQ" name="nombre" createMode="false"/>
               <inputs xmi:type="process:ContractInput" xmi:id="_Jompkjp3Ee-SJZG9QmTKNQ" name="cantidad" type="INTEGER" createMode="false"/>
               <inputs xmi:type="process:ContractInput" xmi:id="_Jompkzp3Ee-SJZG9QmTKNQ" name="presupuesto" createMode="false"/>
             </inputs>
-            <inputs xmi:type="process:ContractInput" xmi:id="_IwmD4D0yEe-h2Y3-lDnU5w" name="listaInput1" type="COMPLEX" dataReference="lista" createMode="false">
+            <inputs xmi:type="process:ContractInput" xmi:id="_IwmD4D0yEe-h2Y3-lDnU5w" name="listaInput1" type="COMPLEX" createMode="false">
               <inputs xmi:type="process:ContractInput" xmi:id="_IwmD4T0yEe-h2Y3-lDnU5w" name="nombre" createMode="false"/>
               <inputs xmi:type="process:ContractInput" xmi:id="_IwmD4j0yEe-h2Y3-lDnU5w" name="cantidad" type="INTEGER" createMode="false"/>
               <inputs xmi:type="process:ContractInput" xmi:id="_IwmD4z0yEe-h2Y3-lDnU5w" name="presupuesto" createMode="false"/>
@@ -145,7 +131,7 @@
           <expectedDuration xmi:type="expression:Expression" xmi:id="_gyig-zp0Ee-SJZG9QmTKNQ" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
       </elements>
-      <elements xmi:type="process:Lane" xmi:id="_o0dlcDpzEe-SJZG9QmTKNQ" name="Unidad de Gestión de Contrataciones y Transferencia de Recursos" actor="_wMHWMDp4Ee-SJZG9QmTKNQ">
+      <elements xmi:type="process:Lane" xmi:id="_o0dlcDpzEe-SJZG9QmTKNQ" name="Unidad de Gestión de Contrataciones y Transferencia de Recursos" actor="_wRNY8FBuEe-govrgdeLbnA">
         <elements xmi:type="process:Activity" xmi:id="_bI00gDp2Ee-SJZG9QmTKNQ" name="Generación de pedido y envío" outgoing="_cTZKMzp2Ee-SJZG9QmTKNQ" incoming="_X9I-0Dp6Ee-SJZG9QmTKNQ">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_WqXsMTp2Ee-SJZG9QmTKNQ" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_WqXsMDp2Ee-SJZG9QmTKNQ" name="" content="" returnTypeFixed="true"/>
@@ -176,9 +162,7 @@
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_O0G9wDp6Ee-SJZG9QmTKNQ" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_O0G9wjp6Ee-SJZG9QmTKNQ" name="" content="" returnTypeFixed="true"/>
           <operations xmi:type="expression:Operation" xmi:id="_WA9JgDp7Ee-SJZG9QmTKNQ">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_WA9JgTp7Ee-SJZG9QmTKNQ" name="lista" content="lista" type="TYPE_VARIABLE" returnType="com.company.model.ListaProductos">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_WA9Jgjp7Ee-SJZG9QmTKNQ" name="lista" dataType="_FBJshzpuEe-SJZG9QmTKNQ" className="com.company.model.ListaProductos"/>
-            </leftOperand>
+            <leftOperand xmi:type="expression:Expression" xmi:id="_WA9JgTp7Ee-SJZG9QmTKNQ" name="" content=""/>
             <rightOperand xmi:type="expression:Expression" xmi:id="_WA9Jgzp7Ee-SJZG9QmTKNQ" name="listaInput.estaAprobado" content="listaInput?.estaAprobado" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
               <referencedElements xmi:type="process:ContractInput" xmi:id="_WA9JhDp7Ee-SJZG9QmTKNQ" name="listaInput" type="COMPLEX" createMode="false"/>
             </rightOperand>
@@ -195,19 +179,15 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_YjMAQDp8Ee-SJZG9QmTKNQ" name="comprasForm" content="2e1b3503-171e-4c86-8a97-a289c0473b13" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_Q6TOMTp6Ee-SJZG9QmTKNQ">
-            <inputs xmi:type="process:ContractInput" xmi:id="_WA6tQDp7Ee-SJZG9QmTKNQ" name="listaInput" type="COMPLEX" dataReference="lista" createMode="false">
+            <inputs xmi:type="process:ContractInput" xmi:id="_WA6tQDp7Ee-SJZG9QmTKNQ" name="listaInput" type="COMPLEX" createMode="false">
               <inputs xmi:type="process:ContractInput" xmi:id="_WA6tQTp7Ee-SJZG9QmTKNQ" name="estaAprobado" type="BOOLEAN" createMode="false"/>
             </inputs>
           </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_Q6T1Qjp6Ee-SJZG9QmTKNQ" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
       </elements>
-      <data xmi:type="process:BusinessObjectData" xmi:id="__p7MMDpxEe-SJZG9QmTKNQ" name="lista" dataType="_FBJshzpuEe-SJZG9QmTKNQ" className="com.company.model.ListaProductos">
-        <defaultValue xmi:type="expression:Expression" xmi:id="_MC7wQDpyEe-SJZG9QmTKNQ" name="initLista()" content="import org.bonitasoft.engine.identity.UserNotFoundException&#xD;&#xA;&#xD;&#xA;def listaProductosVar = new com.company.model.ListaProductos()&#xD;&#xA;listaProductosVar.nombre = listaInput?.nombre&#xD;&#xA;listaProductosVar.cantidad = listaInput?.cantidad&#xD;&#xA;listaProductosVar.presupuesto = listaInput?.presupuesto?.trim() ? listaInput.presupuesto.toLong() : null&#xD;&#xA;try{&#xD;&#xA;&#x9;def processInitiator = apiAccessor.getIdentityAPI().getUser(apiAccessor.getProcessAPI()&#xD;&#xA;&#x9;&#x9;&#x9;.getProcessInstance(processInstanceId)&#xD;&#xA;&#x9;&#x9;&#x9;.getStartedBy())&#xD;&#xA;&#x9;listaProductosVar.listaId = processInitiator.id&#xD;&#xA;}catch(UserNotFoundException e){&#xD;&#xA;&#x9;// Handle UserNotFoundException here&#xD;&#xA;&#x9;// Was the process started by the system (e.g.: a start event) ?&#xD;&#xA;&#x9;// Has the user who started the process instance been deleted ?&#xD;&#xA;}&#xD;&#xA;return listaProductosVar" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.ListaProductos">
-          <referencedElements xmi:type="process:ContractInput" xmi:id="_P1_q0Dp1Ee-SJZG9QmTKNQ" name="listaInput" type="COMPLEX"/>
-          <referencedElements xmi:type="expression:Expression" xmi:id="_P1_q0Tp1Ee-SJZG9QmTKNQ" name="processInstanceId" content="processInstanceId" type="TYPE_ENGINE_CONSTANT" returnType="java.lang.Long"/>
-          <referencedElements xmi:type="expression:Expression" xmi:id="_P2AR4Dp1Ee-SJZG9QmTKNQ" name="apiAccessor" content="apiAccessor" type="TYPE_ENGINE_CONSTANT" returnType="org.bonitasoft.engine.api.APIAccessor"/>
-        </defaultValue>
+      <data xmi:type="process:BusinessObjectData" xmi:id="_-Ovq0FBuEe-govrgdeLbnA" name="listaInput" dataType="_FBJshzpuEe-SJZG9QmTKNQ" className="com.company.model2.ListaProductos">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_-Ovq0VBuEe-govrgdeLbnA" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_FBJsZzpuEe-SJZG9QmTKNQ">
         <targetForm xmi:type="expression:Expression" xmi:id="_g_O_gjp8Ee-SJZG9QmTKNQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
@@ -247,12 +227,9 @@
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_X9I-0Tp6Ee-SJZG9QmTKNQ"/>
         <condition xmi:type="expression:Expression" xmi:id="_X9I-0jp6Ee-SJZG9QmTKNQ" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
-      <actors xmi:type="process:Actor" xmi:id="_FBJsbjpuEe-SJZG9QmTKNQ" documentation="Este es un ejemplo de actor que está mapeado a cualquier usuario de la organización ACME" name="Employee actor" initiator="true"/>
-      <actors xmi:type="process:Actor" xmi:id="_wMHWMDp4Ee-SJZG9QmTKNQ" name="empleado ugctr"/>
-      <actors xmi:type="process:Actor" xmi:id="_z3LSsDp4Ee-SJZG9QmTKNQ" name="empleado uop"/>
-      <actors xmi:type="process:Actor" xmi:id="_1PXNoDp4Ee-SJZG9QmTKNQ" name="empleado ut"/>
+      <actors xmi:type="process:Actor" xmi:id="_wRNY8FBuEe-govrgdeLbnA" name="unidad"/>
       <contract xmi:type="process:Contract" xmi:id="_FBJsbzpuEe-SJZG9QmTKNQ">
-        <inputs xmi:type="process:ContractInput" xmi:id="_MC6iIDpyEe-SJZG9QmTKNQ" name="listaInput" type="COMPLEX" dataReference="lista">
+        <inputs xmi:type="process:ContractInput" xmi:id="_MC6iIDpyEe-SJZG9QmTKNQ" name="listaInput" type="COMPLEX">
           <inputs xmi:type="process:ContractInput" xmi:id="_MC6iITpyEe-SJZG9QmTKNQ" name="nombre"/>
           <inputs xmi:type="process:ContractInput" xmi:id="_MC6iIjpyEe-SJZG9QmTKNQ" name="cantidad" type="INTEGER"/>
           <inputs xmi:type="process:ContractInput" xmi:id="_MC6iIzpyEe-SJZG9QmTKNQ" name="presupuesto"/>
