@@ -165,6 +165,8 @@ Esta capa maneja la lógica específica de dominio y las reglas de negocio.
     - Rol: Gestiona el inventario de productos.
     - Conexión: Interactúa con **AgenteInterno** y **Compra**.
 
+Este diagrama proporciona una estructua clara y organizada para la gestión de proveedores, documentos y servicios dentro de un mismo sistema. Cada capa tiene roles y responsabilidades específicas con clases y también interfaces que aseguran una interacción eficiente y coherente entre los diferentes componentes del sistema. La capa de presentación se encarga de la interacción del usuario, la lógica de negocios maneja las reglas de negocio, la gestión de documentos asegura el flujo adecuado de documentos, el acceso a datos facilita la manipulación de la base de datos y la infraestructura garantiza el almacenamiento seguro y eficiente de los documentos. La capa de dominio representa entidades clave y procesos de negocio que interactúan con las otras capas para cumplir los objetivos del sistema.
+
 ## 📄 Documentación Adicional
 
 Para más detalles sobre la implementación, puedes consultar los documentos adicionales en la carpeta `docs`.
