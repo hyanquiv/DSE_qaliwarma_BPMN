@@ -31,25 +31,25 @@ La aplicación BPM incluye:
 A continuación, se presenta una breve descripción de los procesos de negocio implementados:
 
 - **Proceso 1:** Aprobación del cronograma de convocatoria, bases estandarizadas para el proceso de compras, elaboración y actualización de documentos normativos.
-
+![Diagrama del proceso](https://github.com/hyanquiv/DSE_qaliwarma_BPMN/blob/proceso_compras/files/proceso_aprob_cronograma)
   
 - **Proceso 2:** Selección de proveedores.
-
+![Diagrama de proceso de selección de proveedores](https://github.com/hyanquiv/DSE_qaliwarma_BPMN/blob/proceso_compras/files/proceso_seleccion_proveedores)
 
 - **Proceso 3:** Adquisición y distribución de alimentos.
-
+![Diagrama de proceso de adquisición y distribución de alimentos](https://github.com/hyanquiv/DSE_qaliwarma_BPMN/blob/proceso_compras/files/proceso_adquisicion_alimentos)
 
   
 - **Proceso 4:** Planificación del menú escolar.
-
+![Diagrama de proceso de planificaión del menú escolar](https://github.com/hyanquiv/DSE_qaliwarma_BPMN/blob/proceso_compras/files/proceso_menu_escolar)
 
   
 - **Proceso 5:** Convocatoria y conducción del proceso de compras según las bases y el manual de aprobados.
-
+![Diagrama de proceso de compras](https://github.com/hyanquiv/DSE_qaliwarma_BPMN/blob/proceso_compras/files/proceso_compras)
 
   
 - **proceso 6:** Gestión de Inventarios locales.
-
+![Diagrama de proceso de gestión de inventarios](https://github.com/hyanquiv/DSE_qaliwarma_BPMN/blob/proceso_compras/files/proceso_gestion_inventarios)
 
   
 
