@@ -34,7 +34,7 @@
             <uniqueConstraints/>
             <queries/>
             <indexes/>
-                
+        </businessObject>        
         <businessObject qualifiedName="com.company.model1.Viveres">
             <fields>
                 <field type="INTEGER" length="255" name="recepcion_id" nullable="true" collection="false"/>
