@@ -30,9 +30,28 @@ La aplicación BPM incluye:
 
 A continuación, se presenta una breve descripción de los procesos de negocio implementados:
 
-- **Proceso 1:** Gestion de Inventarios.
-- **Proceso 2:** Descripción breve del proceso.
-- **Proceso 3:** Descripción breve del proceso.
+- **Proceso 1:** Aprobación del cronograma de convocatoria, bases estandarizadas para el proceso de compras, elaboración y actualización de documentos normativos.
+
+  
+- **Proceso 2:** Selección de proveedores.
+
+
+- **Proceso 3:** Adquisición y distribución de alimentos.
+
+
+  
+- **Proceso 4:** Planificación del menú escolar.
+
+
+  
+- **Proceso 5:** Convocatoria y conducción del proceso de compras según las bases y el manual de aprobados.
+
+
+  
+- **proceso 6:** Gestión de Inventarios locales.
+
+
+  
 
 ## 🏗️ SOA: Servicios de Soporte a Tareas Automáticas
 
