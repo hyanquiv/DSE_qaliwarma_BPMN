@@ -8,7 +8,7 @@ Bienvenido al repositorio del Proyecto BPMN en Bonitasoft. Aquí encontrarás to
   - **Integrantes:**
     - Santiago Vilca Limachi
     - Edson Bryan Béjar Román
-    - [Nombre del Integrante 3]
+    - Patrik Ramirez Zarate
     - [Nombre del Integrante 4]
 
 ## 🏢 Cliente: Programa Nacional de Alimentación Escolar Qali Warma.
