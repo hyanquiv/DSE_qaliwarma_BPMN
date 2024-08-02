@@ -333,7 +333,20 @@ El proceso asegura que los productos recibidos sean verificados y almacenados ad
 
 ![image](https://github.com/user-attachments/assets/da070edf-038f-4b9c-9b73-37b787b09dd7)
 
-  
+## 🧪 Pruebas de eficiencia en JMeter
+
+Se hizo test con 100 users en 150 segundos con loop count igual a 30 en el método get para obtener la lista de productos (inventario) y en el método post para enviar nuevos productos.
+
+![Árbol de resultados](/images/pruebas-eficiencia_JMETER.png)
+
+![Contenido devuelto](/images/pruebas-eficiencia_JMETER_2.png)
+
+## 🧪 Pruebas de seguridad en ZAP
+
+Las pruebas de seguridad se ejecutaron junto con los casos de Postman, se conectó a ZAP y se detecto el tráfico generado por estas solictudes, en la imagen se muestra las distintas solicitudes que se hicieron, incluso algunas que fallaron.
+
+![Tráfico generado por las solicitudes](/images/pruebas-seguridad_ZAP.png)
+
 ## 🏗️ SOA: Servicios de Soporte a Tareas Automáticas
 
 Los servicios de soporte están basados en el estándar **OpenAPI** y utilizan la herramienta **Swagger** para la documentación y prueba de API.
