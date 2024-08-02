@@ -66,6 +66,15 @@ Este principio se aplica en la definición de clases y métodos, aquí se puede 
 ![Principio de Responsabilidad Única](images/S_principle.png)
 
 ### 🏛️ Open-Closed Principle (Principio Abierto-Cerrado)
+
+Este principio se aplica cuando deseamos que nuestro sistema sea fácil de extender sin necesidad de modificar el código existente. Por ahora se usa una lista para guardar los documentos existentes, pero si en el futuro se desea cambiar la forma en que se almacenan los documentos (por ejemplo, en una base de datos o en un sistema de almacenamiento en la nube), se necesitaría modificar DocumentManagementServiceImpl. Entonces para evitar esto, definimos una interfaz para el almacenamiento de documentos. Esto permite cambiar el mecanismo de almacenamiento sin afectar la lógica de gestión de documentos.
+
+![Principio de Abierto-Cerrado](images/O_principle.png)
+
+De esta manera, podemos crear diferentes implementaciones de StorageService sin cambiar DocumentManagementServiceImpl. En nuestro caso, creamos la implementación de guardado en memoria y definimos la que implementa un guardado en una base de datos.
+
+![Implementación de guardado en memoria](images/O_principle_in-memory-storage.png)
+
 ### 🏛️ Liskov Substitution Principle (Principio de responsabilidad única)
 ### 🏛️ Interface Segregation Principle (Principio de segregación de interfaz)
 ### 🏛️ Dependency Inversion Principle (Principio de inversión de dependencia)
