@@ -69,6 +69,7 @@ Los servicios de soporte están basados en el estándar **OpenAPI** y utilizan l
 ## 🔄 Diagrama de Composición de Servicios
 
 Aquí se detalla el diagrama de composición de servicios a través de los procesos de negocio:
+![Uploading PackageDiagram1.png…]()
 
 ![Diagrama de Composición de Servicios](ruta/al/diagrama.png)
 
