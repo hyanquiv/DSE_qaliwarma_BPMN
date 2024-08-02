@@ -28,9 +28,36 @@ La aplicación BPM incluye:
 
 ## 📊 Procesos de Negocio
 
-A continuación, se presenta una breve descripción de los procesos de negocio implementados:
+### A continuación, se presenta una breve descripción de los procesos de negocio implementados:
 
 - **Proceso 1:** Gestion de Inventarios.
+![image](https://github.com/user-attachments/assets/92071f50-f65b-4ade-8dcf-6b9604a123f5)
+![image](https://github.com/user-attachments/assets/958bfb3b-d53c-42c2-acc7-23900917fe24)
+![image](https://github.com/user-attachments/assets/3ec201eb-c123-46a1-9883-d45342509a7e)
+![image](https://github.com/user-attachments/assets/68596a7e-6631-4165-9990-f9b56f12eb7c)
+![image](https://github.com/user-attachments/assets/afe25d4f-02fb-4b47-a833-b8ec93311b0e)
+![image](https://github.com/user-attachments/assets/d7319c1f-effd-44e9-8ad1-5261f29d203f)
+![image](https://github.com/user-attachments/assets/d93d6fb0-9091-4990-9e34-307867b61977)
+![image](https://github.com/user-attachments/assets/98cbb8b7-6906-4188-bcf0-b6573dbe1cfe)
+![image](https://github.com/user-attachments/assets/fa017ddc-3fc9-47ac-bc44-9aac30c1322c)
+![image](https://github.com/user-attachments/assets/fd4d0857-0f08-4b47-b42f-10fa4e43eb04)
+
+### Se puede marcar la casilla si hay mas productos para verificar
+
+![image](https://github.com/user-attachments/assets/473b853e-a617-4e8d-b956-acb3dd0e609d)
+
+### Se verifica que se almacenan en la tabla
+![image](https://github.com/user-attachments/assets/b185e6c6-2f6b-40c6-a57f-acd8cc6a63a3)
+
+### Se envian correos
+
+![image](https://github.com/user-attachments/assets/a940f334-5206-480e-b2a0-1b3583b8aee6)
+
+### Se envia emails de notificaciones
+
+![image](https://github.com/user-attachments/assets/da070edf-038f-4b9c-9b73-37b787b09dd7)
+
+  
 - **Proceso 2:** Descripción breve del proceso.
 - **Proceso 3:** Descripción breve del proceso.
 
