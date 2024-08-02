@@ -60,21 +60,22 @@ Aquí se detalla el diagrama de composición de servicios a través de los proce
 El diagrama está dividido en varias capas, cada una con sus propios módulos y componentes.
 
 
-![Diagrama de Composición de Servicios]([ruta/al/diagrama.png](https://github.com/hyanquiv/DSE_qaliwarma_BPMN/blob/proceso_compras/files/d_c_s.png))
+![Diagrama de Composición de Servicios](https://github.com/hyanquiv/DSE_qaliwarma_BPMN/blob/proceso_compras/files/d_c_s.png)
+
 
 
 ### 1. Capa de presentación:
 Esta capa se encarga de la interacción con el usuario, proporcionando interfaces y visualizaciones para el funcionamiento del sistema.
   - **Paquete de Proveedores:**
     - La Clase **Empleado** con atributos **id**, **nombre** y **rol**.
-      - Rol: representa al empleado que interactúa con el sistema.
+      - Rol: Representa al empleado que interactúa con el sistema.
       - Conexión: Interactúa con las capas de gestión de documentos y lógica de negocios.
   - **Paquete de Empleados:**
     - La Clase **Empleado** con atributos **id**, **nombre** y **rol**.
       - Rol: Representa al empleado que interactúa con el sistema.
       - Conexión: Interactúa con las capas de gestión de documentos y lógica de negocios.
   - **Paquete CAE y Padre de Familia:**
-    - La Clase **CAE**, **Padre de Familia** con atributos **id**, **nombre** y **teléfono**.
+    - La Clase **CAE**, **Padre de Familia** con atributos **id**, **nombre** y **telefono**.
       - Rol: Representa usuarios finales que interactúan con el sistema para tomar decisiones decisiones sobre menús escolares.
       - Conexión: Se comunican con la lógica de negocios par definir criterios y elegir menús.
 
@@ -86,11 +87,11 @@ Esta capa maneja la lógica emresarial del sistema, gestionando las operaciones 
   - **Gestión de Proveedores de Servicios:**
     - Clase **GestiónProveedoresServicios** con métodos **listarProveedores**, **agregarProveedor**, **eliminarProveedor**, y **evaluarProveedor**.
       - Rol: Gestiona y evalúa proveedores de servicios.
-      - Conexión: Interactúa con las clases **ProveedorDAO**, **EvaluaciónDAO**, y **CriteriosDAO** en la capa de acceso a datos.
+      - Conexión: Interactúa con las clases **ProveedorDAO**, **EvaluacionDAO**, y **CriteriosDAO** en la capa de acceso a datos.
   - **Evaluación de Proveedores de Servicios:**
     - Clase **EvaluaciónProveedoresServicios** con métodos **historialDesempeño** y **mapProveedor**.
       - Rol: Evalúa el desempeño de los proveedores basándose en criterios definidos.
-      - Conexión: Interactúa con **ProveedorDAO** y **EvaluaciónDAO**.
+      - Conexión: Interactúa con **ProveedorDAO** y **EvaluacionDAO**.
   - **Definición de Criterios de Servicio:**
     - Clase **DefiniciónCriteriosServicio** con métodos **agregarCriterio**, **eliminarCriterio**, y **listarCriterios**.
       - Rol: Define y gestiona los criterios de evaluación para los proveedores.
@@ -144,6 +145,7 @@ Esta capa proporciona servicios esenciales y de apoyo al resto del sistema, gest
     - Clase **RepositorioDocumentos** con métodos **guardarDocumento**, **eliminarDocumento**, **actualizarDocumento**, y **obtenerDocumento**.
       - Rol: Gestiona el almacenamiento y recuperación de documentos en el sistema.
       - Conexión: Interactúa con las clases **GestiónDocumentos**, **RevisiónDocumental**, **AprobaciónDocumentaria**, y **Publicación**.
+      - 
 ### 6. Capa de Dominio:
 Esta capa maneja la lógica específica de dominio y las reglas de negocio.
   - **Agente Interno:**
@@ -154,8 +156,14 @@ Esta capa maneja la lógica específica de dominio y las reglas de negocio.
   - **Compra:**
     - Clase **Compra** con atributos **id**, **fecha**, **formaDePago**, y métodos **agregarProducto** y **cancelarCompra**.
       - Rol: Gestiona las compras realizadas en el sistema.
-      - Conexión: Interactúa con **GestiónInventarios**.
+      - Conexión: Interactúa con **GestionInventarios**.
+     
+### 7. Otros Componentes:
 
+- Gestión de Inventarios:
+  - Clase **GestionInventarios** con métodos **añadirProducto**, **eliminarProducto**, **actualizarProducto**, **mostrarProducto**.
+    - Rol: Gestiona el inventario de productos.
+    - Conexión: Interactúa con **AgenteInterno** y **Compra**.
 
 ## 📄 Documentación Adicional
 
