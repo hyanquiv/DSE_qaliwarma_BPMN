@@ -63,7 +63,7 @@ Aquí explicamos cómo aplicamos los principios SOLID en nuestro proyecto
 
 Este principio se aplica en la definición de clases y métodos, aquí se puede ver la clase InventarioEntity donde se definen métodos para obtener y cambiar las variables necesarias sin interferir con otros dependencias, cada método se encarga solo de su funcionalidad
 
-![Principio de Responsabilidad Única](images/S_Principle.png)
+![Principio de Responsabilidad Única](images/S_principle.png)
 
 ### 🏛️ Open-Closed Principle (Principio Abierto-Cerrado)
 ### 🏛️ Liskov Substitution Principle (Principio de responsabilidad única)
