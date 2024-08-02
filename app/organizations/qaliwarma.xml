@@ -44,5 +44,10 @@
       <roleName>Jefe de CAE</roleName>
       <groupName>CAE</groupName>
     </membership>
+    <membership>
+      <userName>John</userName>
+      <roleName>Jefe de CAE</roleName>
+      <groupName>CAE</groupName>
+    </membership>
   </memberships>
 </organization:Organization>
