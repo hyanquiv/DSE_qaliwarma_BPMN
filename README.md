@@ -82,6 +82,32 @@ Los servicios de soporte están basados en el estándar **OpenAPI** y utilizan l
 - **Agregados:** Descripción de los agregados utilizados.
 - **Módulos:** Descripción de los módulos clave.
 
+## 📜 SOLID: Aplicación de los prinicipios
+
+Aquí explicamos cómo aplicamos los principios SOLID en nuestro proyecto
+
+### ✅ Single Responsibility Principle (Principio de responsabilidad única)
+
+Este principio se aplica en la definición de clases y métodos, aquí se puede ver la clase InventarioEntity donde se definen métodos para obtener y cambiar las variables necesarias sin interferir con otros dependencias, cada método se encarga solo de su funcionalidad
+
+![Principio de Responsabilidad Única](images/S_principle.png)
+
+### ✅ Open-Closed Principle (Principio Abierto-Cerrado)
+
+Este principio se aplica cuando deseamos que nuestro sistema sea fácil de extender sin necesidad de modificar el código existente. Por ahora se usa una lista para guardar los documentos existentes, pero si en el futuro se desea cambiar la forma en que se almacenan los documentos (por ejemplo, en una base de datos o en un sistema de almacenamiento en la nube), se necesitaría modificar DocumentManagementServiceImpl. Entonces para evitar esto, definimos una interfaz para el almacenamiento de documentos. Esto permite cambiar el mecanismo de almacenamiento sin afectar la lógica de gestión de documentos.
+
+![Principio de Abierto-Cerrado](images/O_principle.png)
+
+De esta manera, podemos crear diferentes implementaciones de StorageService sin cambiar DocumentManagementServiceImpl. En nuestro caso, creamos la implementación de guardado en memoria y definimos la que implementa un guardado en una base de datos.
+
+![Implementación de guardado en memoria](images/O_principle_in-memory-storage.png)
+
+### ✅ Dependency Inversion Principle (Principio de inversión de dependencia)
+
+El principio de inversión de dependencia establece que nuestras clases deben depender de interfaces o clases abstractas en lugar de clases y funciones concretas. Se relaciona mucho con el principio Abrierto-Cerrado. Las clases de alto nivel no deben depender de clases de bajo nivel. Ambas deben depender de abstracciones. En nuestro proyecto al implementar StorageService, DocumentManagementServiceImpl no depende de clases de bajo nivel como InMemoryStorageService y DatabaseStorageService sino directamente una interfaz o abstracción como lo es StorageService.
+
+![Principio de Inversión de Dependencia](images/D_principle.png)
+
 ## 🔄 Diagrama de Composición de Servicios
 Aquí se detalla el diagrama de composición de servicios a través de los procesos de negocio.
 El diagrama está dividido en varias capas, cada una con sus propios módulos y componentes.
