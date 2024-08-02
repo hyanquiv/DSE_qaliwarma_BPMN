@@ -32,7 +32,29 @@ A continuación, se presenta una breve descripción de los procesos de negocio i
 
 - **Proceso 1:** Gestion de Inventarios.
 - **Proceso 2:** Descripción breve del proceso.
-- **Proceso 3:** Descripción breve del proceso.
+- **Proceso 3:** Planificación del Menu Escolar
+  ![image](https://github.com/user-attachments/assets/96cc98a3-fb87-4b1b-a044-a1010205c0a7)
+  
+#### 1. Comité de Alimentacion Escolar CAE. 
+
+#### 2. Padres de familia.
+  
+ El proceso consiste en la aprobacion y cumplimiento del estandar nutricional
+ 
+
+3.5. Convocatoria y conducci ́on del proceso de compras seg ́un bases y el manual
+de aprobados
+3.5.1.  ́Areas funcionales y departamentos
+Unidad de gesti ́on de contrataciones y transferencia de recursos es el encargado de supervisar y
+coordinar las contrataciones.
+Unidad de planeamiento, presupuesto y modernizaci ́on que se encarga de la planificaci ́on y
+presupuesto del proceso de compras.
+La unidad de tecnolog ́ıas de la informaci ́on apoyan con soluciones tecnol ́ogicas para la gesti ́on
+de propuestas y documentaci ́on.
+La unidad de comunicaci ́on e imagen va a manejar la comunicaci ́on oficial y la publicaci ́on del
+cronograma.
+Ciencia de la Computaci ́on 10 DSE
+
 
 ## 🏗️ SOA: Servicios de Soporte a Tareas Automáticas
 
