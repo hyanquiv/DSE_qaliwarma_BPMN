@@ -37,23 +37,12 @@ A continuación, se presenta una breve descripción de los procesos de negocio i
   
 #### 1. Comité de Alimentacion Escolar CAE. 
 
+Recepcion de Productos.
+Preparar los Productos para el consumo.
+
 #### 2. Padres de familia.
   
- El proceso consiste en la aprobacion y cumplimiento del estandar nutricional
- 
-
-3.5. Convocatoria y conducci ́on del proceso de compras seg ́un bases y el manual
-de aprobados
-3.5.1.  ́Areas funcionales y departamentos
-Unidad de gesti ́on de contrataciones y transferencia de recursos es el encargado de supervisar y
-coordinar las contrataciones.
-Unidad de planeamiento, presupuesto y modernizaci ́on que se encarga de la planificaci ́on y
-presupuesto del proceso de compras.
-La unidad de tecnolog ́ıas de la informaci ́on apoyan con soluciones tecnol ́ogicas para la gesti ́on
-de propuestas y documentaci ́on.
-La unidad de comunicaci ́on e imagen va a manejar la comunicaci ́on oficial y la publicaci ́on del
-cronograma.
-Ciencia de la Computaci ́on 10 DSE
+ El proceso consiste en la recepcion, analisis y  aprobacion   del menu escolar 
 
 
 ## 🏗️ SOA: Servicios de Soporte a Tareas Automáticas
