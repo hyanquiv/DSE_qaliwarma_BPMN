@@ -28,7 +28,7 @@ La aplicación BPM incluye:
 
 ## 📊 Procesos de Negocio
 
-A continuación, se presenta una breve descripción de los procesos de negocio implementados:
+### A continuación, se presenta una breve descripción de los procesos de negocio implementados:
 
 - ### Proceso 1:
 Aprobación del cronograma de convocatoria, bases estandarizadas para el proceso de compras, elaboración y actualización de documentos normativos.
@@ -277,27 +277,110 @@ El proceso asegura que los productos recibidos sean verificados y almacenados ad
   - **5.1 Productos Listos para su Uso:**
     - Finalmente, los productos están listos para ser utilizados según las necesidades.
 
+## Proceso Implementado con servicios Externos
 
+- **Proceso 1:** Gestion de Inventarios.
+![image](https://github.com/user-attachments/assets/92071f50-f65b-4ade-8dcf-6b9604a123f5)
+![image](https://github.com/user-attachments/assets/958bfb3b-d53c-42c2-acc7-23900917fe24)
+![image](https://github.com/user-attachments/assets/3ec201eb-c123-46a1-9883-d45342509a7e)
+![image](https://github.com/user-attachments/assets/68596a7e-6631-4165-9990-f9b56f12eb7c)
+![image](https://github.com/user-attachments/assets/afe25d4f-02fb-4b47-a833-b8ec93311b0e)
+![image](https://github.com/user-attachments/assets/d7319c1f-effd-44e9-8ad1-5261f29d203f)
+![image](https://github.com/user-attachments/assets/d93d6fb0-9091-4990-9e34-307867b61977)
+![image](https://github.com/user-attachments/assets/98cbb8b7-6906-4188-bcf0-b6573dbe1cfe)
+![image](https://github.com/user-attachments/assets/fa017ddc-3fc9-47ac-bc44-9aac30c1322c)
+![image](https://github.com/user-attachments/assets/fd4d0857-0f08-4b47-b42f-10fa4e43eb04)
+
+### Se puede marcar la casilla si hay mas productos para verificar
+
+![image](https://github.com/user-attachments/assets/473b853e-a617-4e8d-b956-acb3dd0e609d)
+
+### Se verifica que se almacenan en la tabla
+![image](https://github.com/user-attachments/assets/b185e6c6-2f6b-40c6-a57f-acd8cc6a63a3)
+
+### Se envian correos
+
+![image](https://github.com/user-attachments/assets/a940f334-5206-480e-b2a0-1b3583b8aee6)
+
+### Se envia emails de notificaciones
+
+![image](https://github.com/user-attachments/assets/da070edf-038f-4b9c-9b73-37b787b09dd7)
+
+  
 ## 🏗️ SOA: Servicios de Soporte a Tareas Automáticas
 
 Los servicios de soporte están basados en el estándar **OpenAPI** y utilizan la herramienta **Swagger** para la documentación y prueba de API.
 
 ### 📦 Recursos
 
-- **Nombre del Recurso:** <Propósito del Recurso>
+- **Nombre del Recurso:** Gestion de Inventarios
   - **Operaciones Disponibles:**
-    - **Método:** GET  
+    - **Método:** GET
       **URLs:** /proj/inventarios/listar  
-      **Parámetros:** [Parámetro1, Parámetro2]
+      **Parámetros:** NO PARAMETERS
+      
     - **Métodos:** POST  
+      **URLs:** /proj/inventarios/editar/{id}
+      **Parámetros:** [id]
+      
+    - **Métodos:** DELETE
+      **URLs:** /proj/inventarios/eliminar/{id}
+      **Parámetros:** [id]
+      
+    - **Métodos:** POST
       **URLs:** /proj/inventarios/guardar
-      **Parámetros:** [Parámetro1, Parámetro2]
+      **Parámetros:** [body]
+     
+      
+- **Nombre del Recurso:** Gestion de Documentos
+  - **Operaciones Disponibles:**
+    - **Métodos:** POST
+      **URLs:** /documents/upload/
+      **Parámetros:** [body]
+      
+    - **Métodos:** GET
+      **URLs:** /documents/list/
+      **Parámetros:** NO PARAMETERS
+      
+    - **Métodos:** GET
+      **URLs:** /documents/download/{id}
+      **Parámetros:** [id]
+      
+    - **Métodos:** DELETE
+      **URLs:** /documents/delete/{id}
+      **Parámetros:** [id]
 
 ### 🏛️ Modelos
 
 - **Entidades Clave:** Descripción de las entidades clave del sistema.
 - **Agregados:** Descripción de los agregados utilizados.
 - **Módulos:** Descripción de los módulos clave.
+
+## 📜 SOLID: Aplicación de los prinicipios
+
+Aquí explicamos cómo aplicamos los principios SOLID en nuestro proyecto
+
+### ✅ Single Responsibility Principle (Principio de responsabilidad única)
+
+Este principio se aplica en la definición de clases y métodos, aquí se puede ver la clase InventarioEntity donde se definen métodos para obtener y cambiar las variables necesarias sin interferir con otros dependencias, cada método se encarga solo de su funcionalidad
+
+![Principio de Responsabilidad Única](images/S_principle.png)
+
+### ✅ Open-Closed Principle (Principio Abierto-Cerrado)
+
+Este principio se aplica cuando deseamos que nuestro sistema sea fácil de extender sin necesidad de modificar el código existente. Por ahora se usa una lista para guardar los documentos existentes, pero si en el futuro se desea cambiar la forma en que se almacenan los documentos (por ejemplo, en una base de datos o en un sistema de almacenamiento en la nube), se necesitaría modificar DocumentManagementServiceImpl. Entonces para evitar esto, definimos una interfaz para el almacenamiento de documentos. Esto permite cambiar el mecanismo de almacenamiento sin afectar la lógica de gestión de documentos.
+
+![Principio de Abierto-Cerrado](images/O_principle.png)
+
+De esta manera, podemos crear diferentes implementaciones de StorageService sin cambiar DocumentManagementServiceImpl. En nuestro caso, creamos la implementación de guardado en memoria y definimos la que implementa un guardado en una base de datos.
+
+![Implementación de guardado en memoria](images/O_principle_in-memory-storage.png)
+
+### ✅ Dependency Inversion Principle (Principio de inversión de dependencia)
+
+El principio de inversión de dependencia establece que nuestras clases deben depender de interfaces o clases abstractas en lugar de clases y funciones concretas. Se relaciona mucho con el principio Abrierto-Cerrado. Las clases de alto nivel no deben depender de clases de bajo nivel. Ambas deben depender de abstracciones. En nuestro proyecto al implementar StorageService, DocumentManagementServiceImpl no depende de clases de bajo nivel como InMemoryStorageService y DatabaseStorageService sino directamente una interfaz o abstracción como lo es StorageService.
+
+![Principio de Inversión de Dependencia](images/D_principle.png)
 
 ## 🔄 Diagrama de Composición de Servicios
 Aquí se detalla el diagrama de composición de servicios a través de los procesos de negocio.
